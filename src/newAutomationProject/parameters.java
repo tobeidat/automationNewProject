@@ -21,12 +21,12 @@ public class parameters {
 		driver.get("https://www.saucedemo.com/inventory.html");
 	}
 
-	public void loginFunction(String username, String password) throws InterruptedException, IOException {
+	public void loginFunction(String username) throws InterruptedException, IOException {
 		WebElement userNameElement = driver.findElement(By.cssSelector("#user-name"));
 		WebElement userPasswordElement = driver.findElement(By.cssSelector("#password"));
 		WebElement loginButtonElement = driver.findElement(By.className("btn_action"));
 		userNameElement.sendKeys(username);
-		userPasswordElement.sendKeys(password);
+		userPasswordElement.sendKeys("secret_sauce");
 		Thread.sleep(1000);
 		loginButtonElement.click();
 		Date currentDate = new Date();

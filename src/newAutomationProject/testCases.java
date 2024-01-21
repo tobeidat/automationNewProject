@@ -17,7 +17,7 @@ public class testCases extends parameters {
 
 	@Test(priority = 1)
 	public void loginToWebsite() throws IOException, InterruptedException {
-		loginFunction("standard_user", "secret_sauce");
+		loginFunction("standard_user");
 
 	}
 
