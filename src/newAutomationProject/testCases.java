@@ -17,8 +17,7 @@ public class testCases extends parameters {
 
 	@Test(priority = 1)
 	public void loginToWebsite() throws IOException, InterruptedException {
-		loginFunction(driver.findElement(By.cssSelector("#user-name")),
-				driver.findElement(By.cssSelector("#password")));
+		loginFunction("standard_user", "secret_sauce");
 
 	}
 
